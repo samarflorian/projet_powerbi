@@ -18,31 +18,31 @@ L’objectif est de créer un tableau de bord complet, interactif, et accessible
 
 ## 📊 Pages du tableau de bord Power BI
 
-### 1. **Accueil – Vue synthétique**
+### 1. **Page 1: Accueil – Vue synthétique**
 - Résumé des performances globales d’une équipe sur 6 saisons
 - Moyenne de points, taux de victoire, buts / match
 - Graphiques PPM (points par match) et buts / match
 
-### 2. **Classement par saison**
+### 2. **Page 2: Classement par saison**
 - Classement général avec couleur automatique :  
   🟢 Ligue des Champions | ⚪ Maintien | 🔴 Relégation
 - Jauge de **classement moyen**
 - Filtrage dynamique par saison et lieu
 
-### 3. **Analyse par équipe**
+### 3. **Page 3: Analyse par équipe**
 - Moyennes offensives et défensives par saison
 - Ratio victoire / nul / défaite (camembert)
 - Taux de clean sheet
 - Points par mois et histogramme des buts pour / contre
 
-### 4. **Comparaison entre deux équipes**
+### 4. **Page 4: Comparaison entre deux équipes**
 - Comparaison côte à côte sur :
   - Pourcentage de victoires / nuls / défaites
   - Total de buts pour / contre
   - Points par match
 - Sélection dynamique des équipes A et B
 
-### 5. **Dynamique d’une saison**
+### 5. **Page 5: Dynamique d’une saison**
 - Évolution mensuelle :
   - Buts pour / contre (barres empilées)
   - Résultats mensuels (victoires, nuls, défaites)
