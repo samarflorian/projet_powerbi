@@ -1,89 +1,77 @@
-# 📊 Premier League Dashboard – Analyse interactive avec Power BI
+⚽️ Analyse Premier League 2019–2025 – Projet Power BI
+Ce projet a pour objectif d’analyser les saisons entre 2019 et 2025 de Premier League anglaise à travers un tableau de bord interactif conçu avec Power BI. Il permet d'explorer les performances des équipes, leurs dynamiques mensuelles, les comparaisons entre clubs et le classement global.
 
-Ce projet Power BI propose une analyse complète de plusieurs saisons de Premier League anglaise, avec un accent sur la performance d'une équipe sélectionnée.
+📁 Contenu du projet
+Dossier / Fichier	Description
+Analyse-PL_2019_2025.pbix	Fichier principal Power BI avec toutes les visualisations
+PL1925.csv	Fichier source contenant les données de matchs
+images/	Captures d’écran des pages du dashboard
+README.md	Présentation du projet (ce fichier)
 
-## 🧠 Objectif du projet
+📊 Pages du rapport Power BI
+1. Accueil – Vue synthétique
+Moyenne de points, taux de victoire et efficacité offensive par saison
 
-L'objectif est de créer un tableau de bord interactif permettant à un utilisateur de :
+Graphique des PPM (points par match) et des buts/match
 
-- Sélectionner une équipe de Premier League,
-- Visualiser ses performances saison après saison,
-- Comparer ses résultats à d'autres clubs,
-- Étudier son évolution dans le classement et ses statistiques clés.
+Sélection dynamique d'équipe et de saison
 
-Ce projet a été conçu comme un **cas pratique de niveau Data Analyst junior**, avec un fort accent sur l’interprétation des données sportives.
+2. Classement par saison
+Classement global par points, différence de buts
 
----
+Affichage dynamique par saison et lieu (domicile / extérieur)
 
-## 🔍 Données utilisées
+Jauge du classement moyen
 
-Les données proviennent de [Football-Data.co.uk](https://www.football-data.co.uk/) et ont été nettoyées puis transformées sous Power Query.
+3. Analyse par équipe
+Moyenne de buts pour / contre
 
-Colonnes clés :
-- `Date`, `HomeTeam`, `AwayTeam`, `FTHG`, `FTAG`
-- Colonnes calculées : `Points`, `ButsPour`, `ButsContre`, `Résultat`, `CleanSheet`, `GoalAverage`, `Classement`, etc.
+Points par mois
 
----
+Ratio victoires / nuls / défaites
 
-## 📁 Pages du rapport
+Taux de clean sheet
 
-### 📄 Page 1 – Vue synthétique
-- Points par match, taux de victoire, taux de clean sheets
-- Buts pour / contre
-- Graphique de résultats mensuels
+4. Comparaison entre deux équipes
+Comparaison côte à côte : % de victoire, buts pour/contre, points
 
-### 📄 Page 2 – Classements par saison
-- Rang par saison
-- Classement moyen
-- Historique visuel avec colorisation automatique
+Sélection d'équipe A et B via slicer
 
-### 📄 Page 3 – Analyse par équipe
-- Choix libre d'une équipe
-- Visualisation de ses performances globales
-- Graphiques dynamiques et jauges
+5. Dynamique d’une saison
+Suivi mensuel de :
 
-### 📄 Page 4 – Comparaison entre deux équipes
-- Résultats directs
-- Bilan des confrontations
-- Comparatif visuel de stats clés
+Buts pour vs contre
 
-### 📄 Page 5 – Dynamique d’une saison
-- Histogramme mensuel de résultats
-- Courbe des points cumulés
-- Analyse des phases fortes / faibles
+Points cumulés
 
----
+Ratio résultats (victoire, nul, défaite)
 
-## 🛠️ Outils utilisés
+🧾 Colonnes et mesures utilisées
+✅ Colonnes clés :
+Date, Lieu, Saison, Équipe, Adversaire
 
-- **Power BI Desktop**
-- **Power Query (ETL)**
-- **DAX** (pour calculs de KPIs, classement dynamique, taux, etc.)
+ButsPour, ButsContre, Résultat
 
----
+Points, Rang, CleanSheet
 
-## ✅ Résultat
+🧠 Mesures DAX créées :
+Points / Match, PointsCumulés
 
-Ce tableau de bord permet d’explorer et de visualiser les performances des clubs anglais **de manière interactive et professionnelle**, dans une logique de storytelling analytique.
+Taux de Victoire, Taux de Nul, Taux de Défaite
 
----
+TauxCleanSheet, ValeurMax, Classement_Moyen
 
-## 📎 Aperçu
+💾 Source de données
+Le fichier source PL1925.csv est disponible dans le dossier /data.
+Il contient les données match par match pour chaque équipe de Premier League.
 
-![Aperçu page 1](lien_image_page1.png)
-![Aperçu page 2](lien_image_page2.png)
+🧠 Objectifs pédagogiques
+Valoriser mes compétences en modélisation Power BI
 
----
+Créer un tableau de bord intuitif, interactif et complet
 
-## 📌 Auteur
+Réaliser un projet complet de niveau Data Analyst Junior
 
-**Florian S.** – Passionné par l’analyse de données et le football.  
-📫 Contact : *[Ton adresse mail ou ton LinkedIn]*
-
----
-
-## ⚠️ Remarques
-
-- Le projet n’intègre pas les sanctions administratives (ex : retraits de points).
-- L’ajout de saisons futures est possible par simple extension des données.
-
+🧵 Auteur
+Florian Samar
+📌 Passionné de data. Ce projet Power BI mêle deux de mes centres d’intérêt et illustre mes compétences en visualisation et storytelling de données.
