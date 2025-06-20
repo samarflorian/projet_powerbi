@@ -11,7 +11,7 @@ L’objectif est de créer un tableau de bord complet, interactif, et accessible
 |----------------------------------------|-------------------------------------------------------------------|
 | `Analyse_PL_2019_2025.pbix`            | Rapport Power BI complet (5 pages interactives)                  |
 | `PL1925.csv`                           | Jeu de données avec tous les matchs entre 2019 et 2025           |
-| `images/` *(optionnel)*                | Dossier contenant les captures du rapport                        |
+| `images/`                              | Dossier contenant les captures du rapport                        |
 | `README.md`                            | Ce fichier de présentation                                       |
 
 ---
