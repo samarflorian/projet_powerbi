@@ -25,7 +25,7 @@ L’objectif est de créer un tableau de bord complet, interactif, et accessible
 
 ### 2. **Classement par saison**
 - Classement général avec couleur automatique :  
-  🟩 Ligue des Champions | 🟪 Maintien | 🟥 Relégation
+  🟢 Ligue des Champions | ⚪ Maintien | 🔴 Relégation
 - Jauge de **classement moyen**
 - Filtrage dynamique par saison et lieu
 
