@@ -1,82 +1,93 @@
-# ⚽️ Analyse Premier League 2023–2024 – Projet Power BI
+# ⚽️ Analyse Premier League (2019–2025) – Projet Power BI
 
-Ce projet a pour objectif d’analyser la saison 2023–2024 de Premier League anglaise à travers un tableau de bord interactif conçu avec **Power BI**. Il permet d'explorer les performances des équipes, leurs dynamiques mensuelles, les comparaisons entre clubs et le classement global.
+Ce projet Power BI explore les **6 dernières saisons de Premier League** (2019–2020 à 2024–2025) afin d’en tirer des insights sur les performances des clubs anglais.  
+L’objectif est de créer un tableau de bord complet, interactif, et accessible à tout utilisateur souhaitant comparer ou analyser la dynamique d’un club.
 
 ---
 
 ## 📁 Contenu du projet
 
-| Dossier / Fichier           | Description                                                       |
-|-----------------------------|-------------------------------------------------------------------|
-| `PL23.pbix`                 | Fichier principal Power BI avec toutes les visualisations        |
-| `data/PL23.csv`             | Fichier source contenant les données de matchs                   |
-| `images/`                   | Captures d’écran des pages du dashboard                          |
-| `README.md`                 | Présentation du projet (ce fichier)                              |
+| Fichier / Dossier                      | Description                                                       |
+|----------------------------------------|-------------------------------------------------------------------|
+| `Analyse_PL_2019_2025.pbix`            | Rapport Power BI complet (5 pages interactives)                  |
+| `PL1925.csv`                           | Jeu de données avec tous les matchs entre 2019 et 2025           |
+| `images/` *(optionnel)*                | Dossier contenant les captures du rapport                        |
+| `README.md`                            | Ce fichier de présentation                                       |
 
 ---
 
-## 📊 Pages du rapport Power BI
+## 📊 Pages du tableau de bord Power BI
 
 ### 1. **Accueil – Vue synthétique**
-- Moyenne de points, taux de victoire et efficacité offensive par saison
-- Graphique des **PPM** (points par match) et des **buts/match**
-- Sélection dynamique d'équipe et de saison
+- Résumé des performances globales d’une équipe sur 6 saisons
+- Moyenne de points, taux de victoire, buts / match
+- Graphiques PPM (points par match) et buts / match
 
 ### 2. **Classement par saison**
-- Classement global par points, différence de buts
-- Affichage dynamique par saison et lieu (domicile / extérieur)
-- Jauge du **classement moyen**
+- Classement général avec couleur automatique :  
+  🟩 Ligue des Champions | 🟪 Maintien | 🟥 Relégation
+- Jauge de **classement moyen**
+- Filtrage dynamique par saison et lieu
 
 ### 3. **Analyse par équipe**
-- Moyenne de buts pour / contre
-- Points par mois
-- Ratio victoires / nuls / défaites
+- Moyennes offensives et défensives par saison
+- Ratio victoire / nul / défaite (camembert)
 - Taux de clean sheet
+- Points par mois et histogramme des buts pour / contre
 
 ### 4. **Comparaison entre deux équipes**
-- Comparaison côte à côte : % de victoire, buts pour/contre, points
-- Sélection d'équipe A et B via slicer
+- Comparaison côte à côte sur :
+  - Pourcentage de victoires / nuls / défaites
+  - Total de buts pour / contre
+  - Points par match
+- Sélection dynamique des équipes A et B
 
 ### 5. **Dynamique d’une saison**
-- Suivi mensuel de :
-  - Buts pour vs contre
-  - Points cumulés
-  - Ratio résultats (victoire, nul, défaite)
+- Évolution mensuelle :
+  - Buts pour / contre (barres empilées)
+  - Résultats mensuels (victoires, nuls, défaites)
+  - Points cumulés par mois
 
 ---
 
-## 🧾 Colonnes et mesures utilisées
+## 🧾 Structure des données
 
-### ✅ Colonnes clés :
-- `Date`, `Lieu`, `Saison`, `Équipe`, `Adversaire`
+### ✅ Données principales (`PL1925.csv`)
+- `Date`, `Saison`, `Lieu`, `Équipe`, `Adversaire`
 - `ButsPour`, `ButsContre`, `Résultat`
 - `Points`, `Rang`, `CleanSheet`
 
-### 🧠 Mesures DAX créées :
-- `Points / Match`, `PointsCumulés`
+### 🧠 Mesures DAX utilisées
+- `Points / Match`
 - `Taux de Victoire`, `Taux de Nul`, `Taux de Défaite`
-- `TauxCleanSheet`, `ValeurMax`, `Classement_Moyen`
-
----
-
-## 💾 Source de données
-
-Le fichier source `PL23.csv` est disponible dans le dossier [`/data`](./data).  
-Il contient les données match par match pour chaque équipe de Premier League.
-
-> Pour actualiser les visuels dans Power BI, assurez-vous que le fichier `.csv` est placé dans le bon dossier.
+- `TauxCleanSheet`
+- `Classement_Moyen`, `ValeurMax`, `ValeurMin`
+- `PointsCumulés`, `PireClassement`, etc.
 
 ---
 
 ## 🧠 Objectifs pédagogiques
 
-- Valoriser mes compétences en **modélisation Power BI**  
-- Créer un tableau de bord **intuitif, interactif et complet**  
-- Réaliser un projet complet **de niveau Data Analyst Junior**
+- 🎯 Présenter mes compétences en **Power BI** (nettoyage, modélisation, visualisation)
+- 📊 Créer un tableau de bord **complet et interactif**
+- 🧠 Valoriser ma capacité à **analyser des données sportives dans le temps**
+
+---
+
+## 📎 Pour lancer le projet
+
+1. Ouvrir le fichier `Analyse_PL_2019_2025.pbix` dans Power BI Desktop  
+2. Vérifier le chemin d’accès au fichier CSV `PL1925.csv`  
+3. Rafraîchir les données si nécessaire  
+4. Naviguer entre les 5 pages pour explorer tous les visuels
 
 ---
 
 ## 🧵 Auteur
 
 **Florian Samar**  
-📌 Passionné de football et de data. Ce projet Power BI mêle deux de mes centres d’intérêt et illustre mes compétences en visualisation et storytelling de données.
+*Passionné de football, de Power BI et de storytelling par la donnée.  
+Ce projet est une synthèse de mes compétences en Data Analysis sur un sujet que j’adore.*  
+📍 Pour toute question : n’hésitez pas à me contacter ou à visiter mon profil GitHub.
+
+---
