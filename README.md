@@ -86,8 +86,8 @@ L’objectif est de créer un tableau de bord complet, interactif, et accessible
 ## 🧵 Auteur
 
 **Florian Samar**  
-*Passionné de football, de Power BI et de storytelling par la donnée.  
-Ce projet est une synthèse de mes compétences en Data Analysis sur un sujet que j’adore.*  
-📍 Pour toute question : n’hésitez pas à me contacter ou à visiter mon profil GitHub.
+*Passionné d'analyse de données.  
+Ce projet est une synthèse de mes compétences en Data Analysis sur un sujet qui me passionne.*  
+
 
 ---
